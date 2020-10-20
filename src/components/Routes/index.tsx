@@ -5,7 +5,7 @@ import { ROUTES } from 'logic/constants';
 
 const Main = lazy(() => import('pages/Main'));
 
-const Routes: React.SFC = () => (
+export const Routes = () => (
   <Suspense fallback={<></>}>
     <Switch>
       <Route path={ROUTES.MAIN}>

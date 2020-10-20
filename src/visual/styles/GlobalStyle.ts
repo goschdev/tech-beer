@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-weight: normal;
+    font-family: 'Roboto', sans-serif;
   }
 
   button {

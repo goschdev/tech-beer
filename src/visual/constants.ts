@@ -1,4 +1,9 @@
-export const COLORS = {};
+export const COLORS = {
+  white: '#EBEBEB',
+  black: '#242424',
+  primary: '#ef6611',
+  secondary: '#fec300',
+};
 
 export const RESOLUTIONS = {
   mobile: {
