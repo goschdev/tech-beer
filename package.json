@@ -1,0 +1,88 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0",
+  "author": "Gosch <dev@gosch.io> (https://gosch.io)",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:coverage": "yarn test -- --coverage --watchAll",
+    "test:all": "CI=true yarn test -- --silent && lint-staged",
+    "generate": "plop --plopfile ./generators/plopfile.js",
+    "eject": "react-scripts eject",
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x} --max-warnings 0"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/enzyme": "^3.10.6",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.13",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
+    "i18next": "^19.7.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "styled-components": "^5.2.0",
+    "typescript": "~4.0.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test:all"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts{,x}": [
+      "eslint --fix --max-warnings 0"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-typescript": "^9.0.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react-hooks": "4.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "plop": "^2.7.4",
+    "prettier": "^2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goschdev/react-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/goschdev/react-boilerplate/issues"
+  }
+}
