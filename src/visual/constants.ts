@@ -1,6 +1,8 @@
 export const COLORS = {
   white: '#EBEBEB',
+  whitePure: '#FFFFFF',
   black: '#242424',
+  blackPure: '#000000',
   primary: '#ef6611',
   secondary: '#fec300',
 };

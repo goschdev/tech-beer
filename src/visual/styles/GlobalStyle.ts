@@ -1,8 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
+import { COLORS } from 'visual/constants';
+
 export const GlobalStyle = createGlobalStyle`
   body, html {
     min-height: 100vh;
+    background-color: ${COLORS.black};
   }
 
   * {

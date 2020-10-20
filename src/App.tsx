@@ -2,11 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import { GlobalStyle } from 'visual/styles/GlobalStyle';
-import Routes from 'components/Routes';
+import { Routes } from 'components/Routes';
+import { Header } from 'components/Header';
 
-const App: React.SFC = () => (
+const App = () => (
   <>
     <GlobalStyle />
+    <Header />
     <Router>
       <Routes />
     </Router>

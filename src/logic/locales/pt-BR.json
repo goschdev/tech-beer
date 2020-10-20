@@ -1,1 +1,11 @@
-{}
+{
+  "title": "Tech&&Beer",
+  "logo-alt": "Logotipo do Tech&&Beer",
+  "menu": {
+    "home": "Início",
+    "talks": "Talks",
+    "managers": "Pessoas Organizadoras",
+    "support": "Apoio",
+    "subscribe": "Increver-se"
+  }
+}
